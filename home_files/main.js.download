@@ -1,0 +1,22 @@
+var t=document.getElementById("oneWay").value;
+var a=document.getElementById("roundTrip").value;
+var n=document.getElementById("text-box").value;
+var a1=document.getElementById("text-box1").value;
+var y=document.getElementById("date").value;
+var button=document.getElementById("enter");
+var outputBox = document.getElementsByTagName('output')[0];
+
+var db1=["Surat","Saputara","Nashik","Shirdi"];
+var db2=["Surat","Saputara","Nashik","Shirdi"];
+
+if (t===true && a===true) {}
+	else{
+		outputBox.value = favDialog.returnValue + "Please choose trip";
+	}
+
+for (var i = 0; i < db1.length; i++) {
+	for (var j = 0; j < db2.length; j++) {
+		if (n===db1[i] && a1===db2[j]) {
+			var price=(j-i)*200;
+		}
+	}
